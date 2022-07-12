@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+.container-fluid{
+    font-family: 'Poppins', sans-serif;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #1B1B3A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    font-family: 'Poppins', sans-serif;    
+}
+.header h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: rgb(226, 58, 58);
+}
+.form label{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins', sans-serif;  
+}
+.form2 label input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;  
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
