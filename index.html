@@ -20,17 +20,19 @@
                 <form class="form-control form2" id="form">
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Name</label>
-                      <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                      <input type="text" required class="form-control" id="name" aria-describedby="emailHelp" placeholder="eg. Jonathan" >
                     </div>
                     <div class="mb-3">
                       <label for="location" class="form-label">Estate</label>
-                      <input type="text" class="form-control" id="estate">
+                      <input type="text" class="form-control" placeholder="eg. Kawangware" required id="estate">
                     </div>
                     <div class="mb-3">
                         <label for="location" class="form-label">Nearest Bus Stage</label>
-                        <input type="text" class="form-control" id="stage">
-                      </div>
-                    <button type="submit" class="btn btn-danger">Submit</button>
+                        <input type="text" required class="form-control" id="stage" placeholder="eg. Equity">
+                    </div>
+                    <div class="btn">
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                    </div>
                 </form>
             </div>
         </div>
