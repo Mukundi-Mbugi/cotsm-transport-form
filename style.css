@@ -7,20 +7,32 @@
     right: 0;
     height: 100vh;
     box-sizing: border-box;
-    background-color: #1B1B3A;
+    background-color: #141C2C;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.header p{
+    font-size: 16px;
+    text-align: center;
+    color: rgb(159, 149, 149);
+    padding: 10px;
+    margin-bottom: 10px;
+}
 .header{
-    font-family: 'Poppins', sans-serif;    
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;  
 }
 .header h1{
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #fd0000;
+    color: rgb(190, 163, 142);
 }
 .form label{
     font-size: 1.2rem;
@@ -64,4 +76,40 @@
 .btn button:hover{
     background-color: #d044ec;    
     color: rgb(255, 255, 255);
+}
+@media (max-width: 600px) {
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .container-fluid{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #141C2C;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header h1{
+        font-size: 26px;
+        text-align: center;
+        color: rgb(190, 163, 142);
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .header p{
+        font-size: 10px;
+        text-align: center;
+        color: rgb(159, 149, 149);
+        padding: 10px;
+        margin-bottom: 10px;
+    }
 }
