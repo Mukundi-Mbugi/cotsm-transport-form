@@ -40,5 +40,8 @@ button.addEventListener("click", (e) => {
   }, function (error) {
     alert(`${error.message} Please enable location`);
   });
-
+ //clear form
+  document.querySelector("#name").value = "";
+  document.querySelector("#estate").value = "";
+  document.querySelector("#stage").value = "";
 });
