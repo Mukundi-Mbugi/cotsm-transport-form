@@ -44,4 +44,7 @@ button.addEventListener("click", (e) => {
   document.querySelector("#name").value = "";
   document.querySelector("#estate").value = "";
   document.querySelector("#stage").value = "";
+
+  //show alert
+  alert("Thank you for participating");
 });
