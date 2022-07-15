@@ -11,15 +11,16 @@ if (navigator.geolocation)
   });
 
 const form = document.querySelector("#form");
-let userName = document.querySelector("#name").value;
-let estate = document.querySelector("#estate").value;
-let stage = document.querySelector("#stage").value;
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  let userName = document.querySelector("#name").value;
+  let estate = document.querySelector("#estate").value;
+  let stage = document.querySelector("#stage").value;
+
   //POST FORM DATA
-  console.log(coordinates[0].latitude);
+  console.log(userName, estate, stage);
 
   fetch("https://cotsm-transport-form.herokuapp.com/members", {
     method: "POST",
