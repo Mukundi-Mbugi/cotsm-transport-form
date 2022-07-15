@@ -41,8 +41,4 @@ button.addEventListener("click", (e) => {
     alert(`${error.message} Please enable location`);
   });
 
-// clear form data
-  document.querySelector("#name").value = "";
-  document.querySelector("#estate").value = "";
-  document.querySelector("#stage").value = "";
 });

@@ -77,6 +77,9 @@
     background-color: #d044ec;    
     color: rgb(255, 255, 255);
 }
+#gps{
+    color: rgb(249, 156, 6);
+}
 @media (max-width: 600px) {
     body{
       display: flex;
@@ -106,7 +109,7 @@
         margin-bottom: 10px;
     }
     .header p{
-        font-size: 10px;
+        font-size: auto;
         text-align: center;
         color: rgb(159, 149, 149);
         padding: 10px;
