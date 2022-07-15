@@ -1,6 +1,15 @@
-//get Location
-let coordinates = [];
-if (navigator.geolocation)
+
+const button = document.querySelector("#btn");
+
+button.addEventListener("click", (e) => {
+  e.preventDefault();
+  
+  let coordinates = [];
+  let userName = document.querySelector("#name").value;
+  let estate = document.querySelector("#estate").value;
+  let stage = document.querySelector("#stage").value;
+
+  //get location
   navigator.geolocation.getCurrentPosition(function (position) {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
@@ -8,19 +17,9 @@ if (navigator.geolocation)
       latitude: latitude,
       longitude: longitude,
     });
-  });
-
-const form = document.querySelector("#form");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  let userName = document.querySelector("#name").value;
-  let estate = document.querySelector("#estate").value;
-  let stage = document.querySelector("#stage").value;
+ 
 
   //POST FORM DATA
-  console.log(userName, estate, stage);
 
   fetch("https://cotsm-transport-form.herokuapp.com/members", {
     method: "POST",
@@ -37,5 +36,13 @@ form.addEventListener("submit", (e) => {
   })
     .then((res) => res.json())
     .then((data) => console.log(data));
-  form.reset();
+
+  }, function (error) {
+    alert(`${error.message} Please enable location`);
+  });
+
+// clear form data
+  document.querySelector("#name").value = "";
+  document.querySelector("#estate").value = "";
+  document.querySelector("#stage").value = "";
 });
